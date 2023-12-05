@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>旅游记事本</title>
+    <link rel="stylesheet" href="./css/write.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    
+</head>
+<body>
+
+    <div id="app">
+        <!-- 输入框 -->
+        <header class="header">
+            <h1>旅游记事本</h1>
+            <div class="form-floating mb-3 ">
+                <input type="email" class="form-control" id="floatingInput" placeholder="请输入任务" title="">
+                <label for="floatingInput">请输入任务</label>
+            </div>
+            <button class="add">添加任务</button>
+        </header>
+        
+        <!-- 列表区域 -->
+        <section class="main">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            前端页面，完结啦！！！
+                        </button>
+                        <button class="delete-button">删除</button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>今天的任务是把前端页面写完</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 统计和清空 -->
+        <footer class="footer">
+            <!-- 统计 -->
+            <span class="todo-count">合 计:<strong> 1 </strong></span>
+            <!-- 清空 -->
+            <button class="clear-completed">
+                清空任务
+            </button>
+        </footer>
+        
+    </div>
+    
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/write.js"></script>
+    
+
+    
+</body>
+</html>

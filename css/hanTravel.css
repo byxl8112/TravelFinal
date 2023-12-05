@@ -1,0 +1,205 @@
+.hanTravel{
+    position: relative;
+    height: 370px;
+}
+.hanTravel .ban-pic{
+    position: absolute;
+    right: 230px;
+    top: 0;
+    width: 270px;
+    height: 370px;
+}
+.ban-uli{
+    position: absolute;
+    top: 0;
+    left: 230px;
+    width: 250px;
+    height: 370px;
+    background-color: rgba(125, 207, 236, 0.3);
+}
+.ban-uli ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.ban-uli li{
+    flex: 1;
+    padding: 5px 10px;
+}
+.ban-uli a{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.ban-uli a:hover{
+    color: #fd7e14;
+}
+
+.ban-uli .icon-tubiaozhizuomoban-::before{
+    content: "\e606";
+    font-size: 20px;
+    color: #999999;
+    margin-right: 5px;
+}
+
+/* 新鲜好物 */
+.hot{
+    background-color: #F5F5F5;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+/*.goods .bd ul {
+    display: flex;
+    justify-content: space-between;
+}
+.goods .bd li {
+    display: block;
+}*/
+
+.goods .bd li .txt {
+    text-align: center;
+}
+.goods .bd li h4 {
+    margin-top: 17px;
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+.goods .bd li p {
+    font-size: 18px;
+    color: #AA2113;
+}
+.goods .bd li p span {
+    font-size: 22px;
+}
+
+/* 名胜人文 */
+.title{
+    position: relative;
+}
+.tapOpen{
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 450px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.tapOpen ul li{
+    display: block;
+    float: left;
+    width: 80px;
+    height: 30px;
+    margin-right: 15px;
+}
+.tapOpen ul li a{
+    padding-bottom: 2px;
+}
+.tapOpen ul li a:hover{
+    color: #fd7e14;
+    border-bottom: 2px solid #406487;
+}
+
+.bd ul .fLi{
+    width: 468px;
+    height: 215px;
+}
+.bd .fLi .lin{
+    position: relative;
+    float: left;
+}
+.bd .fLi .lin img{
+    width: 468px;
+    height: 215px;
+}
+.bd .fLi .txt p{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.bd ul li {
+    display: block;
+    float: left;
+    width: 225px;
+    height: 215px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.bd ul li img{
+    width: 225px;
+    height: 169px;
+}
+.bd .fLi .lin .txt h4{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.bd .fLi .lin .txt h4,
+.bd .fLi .lin .txt p{
+    color: #ffffff;
+}
+.bd .LulLi{
+    position: relative;
+    width: 225px;
+    height: 215px;
+    /*background-color: skyblue;*/
+    background: -webkit-linear-gradient(top,#1ffbf3,#1fa6fb);
+}
+.bd .circleD{
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+}
+.bd .circleD span{
+    position: absolute;
+    right: 33px;
+    top: 32px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #F5F5F5;
+}
+.bd .circleD:hover{
+    background-color: #357f9d;
+}
+.bd h3{
+    position: absolute;
+    font-size: 15px;
+    right: 49px;
+    bottom: 18px;
+}
+
+.bd .LulLi1{
+    position: relative;
+    width: 225px;
+    height: 215px;
+    /*background-color: skyblue;*/
+    background: -webkit-linear-gradient(top,pink,skyblue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

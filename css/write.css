@@ -1,0 +1,164 @@
+body {
+    background: #fff;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:focus {
+    outline: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#app {
+    background: #fff;
+    width: 700px;
+    margin: 180px auto;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+}
+#app .header input {
+    border: 2px solid rgba(175, 47, 47, 0.8);
+    border-radius: 10px;
+}
+
+.form-floating .form-control:focus {
+    box-shadow: none;
+}
+
+/*删除线*/
+.accordion-button.delete-text {
+    text-decoration: line-through;
+}
+
+#app .add {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 58px;
+    width: 140px;
+    text-align: center;
+    background-color: rgba(175, 47, 47, 0.8);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 0 10px 10px 0;
+}
+
+#app h1 {
+    position: absolute;
+    top: -120px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.8);
+    -webkit-text-rendering: optimizeLegibility;
+    -moz-text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility;
+}
+
+.main {
+    position: relative;
+    z-index: 2;
+}
+
+.main .accordion{
+    width: 600px
+}
+
+.accordion .delete-button{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: #bf5959;
+    color: #333333;
+    border-radius: 6px;
+}
+
+.main .accordion .accordion-button:focus{
+    box-shadow: none;
+}
+
+button.accordion-button.collapsed::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    top: 15px;
+}
+
+button.accordion-button::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    right: 50px;
+    top: 15px;
+}
+
+.footer {
+    color: #777;
+    padding: 10px 15px;
+    height: 20px;
+    text-align: center;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 8px 0 -3px #f6f6f6,
+    0 9px 1px -3px rgba(0, 0, 0, 0.2), 0 16px 0 -6px #f6f6f6,
+    0 17px 2px -6px rgba(0, 0, 0, 0.2);
+}
+
+.todo-count {
+    float: left;
+    text-align: left;
+}
+
+.todo-count strong {
+    font-weight: 300;
+}
+
+
+
+
+.clear-completed,
+html .clear-completed:active {
+    float: right;
+    position: relative;
+    line-height: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clear-completed:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,337 @@
+/* 轮播区域 */
+.banner{
+    position: relative;
+    height: 370px;
+    background-color: #F5F5F5;
+}
+.banner .xiehou{
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner a img{
+    width: 1920px;
+    height: 370px;
+}
+.celi{
+    position: absolute;
+    top: 7px;
+    left: 263px;
+    width: 240px;
+    height: 348px;
+    background-color: rgba(251, 254, 254, 0.8);
+}
+.banner .b-type-days{
+    width: 220px;
+    border-bottom: 1px dashed #2b2f32;
+}
+.banner .b-type-area{
+    width: 220px;
+    height: 132px;
+    border-bottom: 1px dashed #2b2f32;
+}
+.banner .b-type-rec{
+    width: 220px;
+    height: 112px;
+}
+.banner .b-type-days,
+.banner .b-type-area,
+.banner .b-type-rec{
+    margin: 0 6px 0 10px;
+    padding: 22px 0;
+}
+.banner .icon-canleder,
+.banner .icon-position,
+.banner .icon-icon_fabulous{
+    font-size: 19px;
+    margin-right: 10px;
+}
+.b-type-list dt{
+    font-size: 17px;
+    line-height: 18px;
+    padding: 0 0 0 27px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.b-type-list dd{
+    height: 23px;
+    padding: 4px 0 0 25px;
+    line-height: 23px;
+    font-size: 14px;
+}
+.b-type-list dl dd a{
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+/*热门目的地*/
+.wrapper{
+    overflow: hidden;
+}
+.hot-destination-warp{
+    height: 548px;
+    margin: 40px 0 0;
+    /*background-color: pink;*/
+}
+/*.hot-destination-tit{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    height: 68px;
+    !*background-color: skyblue;*!
+    background-image: url("../assets/images/home-img.png");
+    background-repeat: repeat;
+    background-position: -250px -562px;
+}*/
+
+.hot-destination-tit {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    height: 68px;
+    position: relative; /* 使伪元素相对于这个容器定位 */
+}
+
+
+.hot-destination-tit h3,
+.hot-destination-tit h4{
+    display: block;
+    height: 68px;
+    background-image: url("../assets/images/home-img.png");
+    
+}
+.hot-destination-tit h3{
+    width: 275px;
+    background-position: -23px -526px;
+}
+.hot-destination-tit h4{
+    width: 109px;
+    background-position: -191px -600px;
+}
+.hot-destination-tit span{
+    position: absolute;
+    top: 36px;
+    left: 271px;
+    height: 20px; /* 设置伪元素的高度为100%，即与父元素高度相同 */
+    width: 50px; /* 设置伪元素的宽度，可根据实际需求调整 */
+    background: url("../assets/images/home-img.png") -250px -562px repeat;
+}
+.hot-destination-tit span:nth-child(2){
+    left: 317px;
+}
+.hot-destination-tit span:nth-child(3){
+    left: 362px;
+}
+.hot-destination-tit span:nth-child(4){
+    left: 406px;
+}
+.hot-destination-tit span:nth-child(5){
+    left: 450px;
+}
+.hot-destination-tit span:nth-child(6){
+    left: 494px;
+}
+.hot-destination-tit span:nth-child(7){
+    left: 538px;
+}
+.hot-destination-tit span:nth-child(8){
+    left: 578px;
+}
+/*下面主体*/
+.hot-destination-main{
+    height: 450px;
+    margin: 20px 0 0;
+}
+.hot-destination-kw{
+    float: left;
+    width: 210px;
+    height: 440px;
+}
+.hot-destination-item{
+    float: left;
+    width: 1000px;
+    height: 460px;
+    margin: 0 20px 0 0;
+}
+.hot-destination-kw dl dt {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 5px;
+}
+.hot-destination-kw dl dd {
+    overflow: hidden;
+    padding: 10px 10px 15px 0;
+}
+.hot-destination-kw dl dd a {
+    float: left;
+    color: #333;
+    padding: 5px;
+    margin-right: 7px;
+    line-height: 21px;
+    font-size: 12px;
+}
+.hot-destination-kw dl dd a:hover{
+    color: #FF6633;
+}
+.hot-destination-item dl {
+    width: 180px;
+    height: 210px;
+    float: left;
+    margin: 0 0 20px 20px;
+    background: #f5f5f5;
+    position: relative;
+}
+.hot-destination-item dt{
+    width: 180px;
+    height: 110px;
+}
+.hot-destination-item dl img {
+    width: 180px;
+    height: 110px;
+    display: block;
+}
+.hot-destination-item dl a {
+    font-size: 14px;
+    color: #666;
+    display: block;
+}
+.hot-destination-item dl a:hover{
+    color: #fd7e14;
+}
+.hot-destination-item dl dd{
+    position: relative;
+    width: 180px;
+    height: 77px;
+    padding: 0 10px;
+}
+.hot-destination-item dl dd h3{
+    padding: 5px 0 15px 0;
+}
+.hot-destination-item dl dd .price {
+    color: #999;
+    font-size: 12px;
+    float: left;
+    line-height: 21px;
+    padding-right: 10px;
+}
+.hot-destination-item dl dd .price span {
+    font-size: 16px;
+    color: #f63;
+}
+.hot-destination-item dl dd .price b {
+    font-size: 20px;
+    color: #f63;
+    padding-right: 5px;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+}
+.hot-destination-item dl dd .city {
+    position: absolute;
+    right: -20px;
+    bottom: -8px;
+    float: right;
+    color: #666;
+    width: 55%;
+    line-height: 19px;
+    font-size: 12px;
+    margin-top: 2px;
+    font-family: "Microsoft YaHei UI";
+}
+
+/* 热门玩法 */
+.play .title h3 {
+    background-image: url("../assets/images/home-img.png");
+    background-position: -264px -263px;
+    margin-top: -10px;
+    font-size: 26px;
+    padding-left: 45px;
+}
+.playimg {
+    width: 222px;
+    height: 459px;
+    float: left;
+}
+.play_lst .playimg:hover {
+    box-shadow: 0 0 10px 5px #ddd;
+}
+.play_lst ul .J-HotPlayList{
+    width: 968px;
+    height: 478px;
+}
+.play_lst ul li{
+    position: relative;
+    width: 222px;
+    height: 219px;
+    float: left;
+    overflow: hidden;
+    margin: 0 0 20px 20px;
+}
+.play_lst ul li img{
+    width: 222px;
+    height: 137px;
+}
+.play_lst ul li .scenerybox{
+    width: 222px;
+    height: 83px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+.play_lst ul li a .img_label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline;
+    width: 52px;
+    height: 20px;
+    padding: 0 8px;
+    font-size: 12px;
+    color: #F5F5F5;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 9px;
+}
+.play_lst ul li .scenerybox p{
+    display: -webkit-box;
+    height: 40px;
+    font-size: 14px;
+    line-height: 19px;
+    overflow: hidden;
+    /* 两行加省略 */
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.play_lst ul li .scenerybox p:hover{
+    color: #fd7e14;
+}
+.play_lst ul li .price{
+    width: 55px;
+    height: 30px;
+    font-size: 12px;
+    color: #999999;
+}
+.play_lst ul li .price b {
+    font-weight: 400;
+    color: #f63;
+    line-height: 20px;
+    font-style: normal;
+    font-size: 16px;
+    padding-right: 5px;
+}
+.play_lst ul li i{
+    font-size: 20px;
+}
+.play_lst ul li .city {
+    color: #666;
+    font-size: 12px;
+    float: right;
+    line-height: 21px;
+    position: absolute;
+    right: 10px;
+    margin-top: 2px;
+    font-family: "Microsoft YaHei";
+}
+
