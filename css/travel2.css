@@ -74,16 +74,22 @@
     margin: 40px 0 0;
     /*background-color: pink;*/
 }
-/*.hot-destination-tit{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    height: 68px;
-    !*background-color: skyblue;*!
-    background-image: url("../assets/images/home-img.png");
-    background-repeat: repeat;
-    background-position: -250px -562px;
+/*.hot-destination-warp .hot-destination-main dl img{
+    filter: blur(0);
 }*/
+.hot-destination-warp .hot-destination-main .hot-destination-item dl:hover{
+    filter: blur(0.2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: bounce 1s alternate;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
 
 .hot-destination-tit {
     display: flex;
@@ -249,7 +255,7 @@
     font-size: 26px;
     padding-left: 45px;
 }
-.playimg {
+.play img {
     width: 222px;
     height: 459px;
     float: left;
@@ -268,6 +274,24 @@
     float: left;
     overflow: hidden;
     margin: 0 0 20px 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.play_lst ul li:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.play_lst ul li::before{
+    content: ''; /* 伪元素的内容为空 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255, 0.15);
+    opacity: 0; /* 默认隐藏 */
+    transition: opacity 0.3s ease-in-out; /* 添加过渡效果 */
+}
+.play_lst ul li:hover::before{
+    opacity: 1;
 }
 .play_lst ul li img{
     width: 222px;

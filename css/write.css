@@ -1,5 +1,9 @@
-body {
-    background: #fff;
+html{
+}
+body{
+    position: relative;
+    background: url("../assets/images/write-bg.jpg") no-repeat;
+    background-size: cover;
 }
 
 button {
@@ -18,13 +22,62 @@ button {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.returnS{
+    position: absolute;
+    top: -163px;
+    left: 30px;
+    display: block;
+    float: left;
+    padding: 5px;
+    border: 1px solid pink;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.returnS:hover{
+    cursor: pointer;
+}
+
+/* 更换背景 */
+.changeB label{
+    position: absolute;
+    top: -163px;
+    right: 30px;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.changeB input{
+    display: none;
+}
+
 :focus {
     outline: 0;
+}
+
+/* 提示框 */
+.main .alert{
+    overflow: hidden;
+    z-index: 100;
+    /*position: absolute;*/
+    width: 400px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    /*display: block;*/
+    text-align: center;
+}
+.show{
+    display: block !important;
 }
 
 .hidden {
     display: none;
 }
+
 
 #app {
     background: #fff;
